@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo2"
+    android:padding="16dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canteen Menu"
+        android:textSize="26dp"
+        android:fontFamily="@font/adamina"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:id="@+id/searchBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuTitle"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#AAFFFFFF"
+        android:padding="8dp"
+        android:background="@drawable/search_bg"
+        android:orientation="horizontal"
+        android:elevation="3dp">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search your food..."
+            android:fontFamily="@font/adamina"
+            android:paddingStart="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#777"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- Menu Items List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchBarLayout"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/borderr"
+        android:padding="10dp"/>
+    <ScrollView
+        android:id="@+id/menuScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/boorder"
+        android:backgroundTint="#4BFFFFFF"
+        android:layout_below="@id/searchBarLayout"
+        android:layout_marginTop="16dp"
+        android:padding="15dp"
+        android:fontFamily="@font/adamina"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/menuEditorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Add Item Button -->
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Item"
+        android:textSize="20dp"
+        android:fontFamily="@font/adamina"
+        android:textColor="@color/black"
+        android:backgroundTint="#53FF00"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

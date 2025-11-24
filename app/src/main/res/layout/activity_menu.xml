@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo2"
+    android:padding="16dp">
+
+    <!-- 🔹 Top App Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@drawable/boorder"
+        android:backgroundTint="#AAFFFFFF"
+        android:elevation="4dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="2dp">
+
+        <TextView
+            android:text="Quick Bite Menu"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:text="Profile"
+            android:backgroundTint="#53FF00"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:textSize="18sp"
+            android:elevation="2dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/adamina" />
+    </LinearLayout>
+
+    <!-- 🔹 Current Order Section -->
+    <LinearLayout
+        android:id="@+id/currentOrderSection"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/boorder"
+        android:backgroundTint="#99FFFFFF"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tvCurrentOrderTitle"
+            android:text="Current Order"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/currentOrderContainer"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- 🔹 Previous Orders Section -->
+    <LinearLayout
+        android:id="@+id/previousOrdersSection"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/boorder"
+        android:backgroundTint="#99FFFFFF"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tvPreviousOrdersTitle"
+            android:text="Previous Orders"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/previousOrdersContainer"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- 🔹 Menu Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/boorder"
+        android:backgroundTint="#80FFFFFF"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/menuContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center_horizontal" />
+    </ScrollView>
+
+    <!-- 🔹 Order Button -->
+    <Button
+        android:id="@+id/btnGoOrder"
+        android:text="Order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#53FF00"
+        android:textSize="22sp"
+        android:fontFamily="@font/adamina"
+        android:elevation="3dp"
+        android:paddingVertical="8dp" />
+</LinearLayout>

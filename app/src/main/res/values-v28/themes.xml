@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="YellowDialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:background">#FFF8DC
+        </item> <!-- Light yellow (same as item cards) -->
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:dialogCornerRadius">20dp</item>
+        <item name="android:windowElevation">12dp</item>
+    </style>
+</resources>

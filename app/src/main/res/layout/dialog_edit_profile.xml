@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/boorder"
+    android:backgroundTint="#FFFFFF"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:layout_margin="60dp">
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#4CAF50" />
+
+    <!-- Course -->
+    <EditText
+        android:id="@+id/editCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:hint="Course"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#4CAF50" />
+
+    <!-- Phone -->
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:fontFamily="@font/adamina"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#4CAF50" />
+
+    <!-- Roll Number -->
+    <EditText
+        android:id="@+id/editRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll Number"
+        android:inputType="text"
+        android:padding="12dp"
+        android:fontFamily="@font/adamina"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#4CAF50" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/black"
+            android:backgroundTint="#999999" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:fontFamily="@font/adamina"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

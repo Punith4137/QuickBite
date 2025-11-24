@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/photo2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:backgroundTint="#AAFFFFFF"
+            android:background="@drawable/edittext_bg"
+            android:clipToPadding="false"
+            android:layout_margin="12dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <!-- 🔹 Student Name -->
+            <TextView
+                android:id="@+id/tvStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student: —"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center" />
+
+            <!-- 🔹 Ordered Items -->
+            <TextView
+                android:id="@+id/tvOrderItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_bg"
+                android:backgroundTint="@color/yellow"
+                android:elevation="1dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Order: —"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_bg"
+                android:backgroundTint="@color/yellow"
+                android:elevation="1dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Total: —"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_bg"
+                android:backgroundTint="@color/yellow"
+                android:elevation="1dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Ordered on: —"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <!-- 🔹 Ready Button -->
+            <Button
+                android:id="@+id/btnReady"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mark as Ready"
+                android:textSize="20dp"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/black"
+                android:backgroundTint="#53FF00"
+                android:layout_marginTop="12dp"
+                android:elevation="0dp"
+                android:gravity="center" />
+        </LinearLayout>
+</ScrollView>

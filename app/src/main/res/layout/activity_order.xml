@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo2"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:backgroundTint="#AAFFFFFF"
+        android:background="@drawable/boorder"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="Order Summary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/orderList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:background="@drawable/boorder"
+            android:padding="10dp"
+            android:elevation="1dp"
+            android:fontFamily="@font/adamina"
+            android:layout_marginBottom="20dp"
+            android:divider="@android:color/black"
+            android:showDividers="middle" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:text="Total Cost: ₹0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adamina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Summary will appear here"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:fontFamily="@font/adamina"
+            android:layout_margin="12dp"
+            android:backgroundTint="@color/yellow"
+            android:background="@drawable/boorder"
+            android:gravity="center" />
+
+
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:text="Place Order"
+            android:textSize="20dp"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/black"
+            android:backgroundTint="#F153FF00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp" />
+    </LinearLayout>
+</ScrollView>
