@@ -1,5 +1,5 @@
 # 🍔 QuickBite  
-A fast, simple, and modern food-ordering Android application built using **Java**, **XML**, and **Android Studio**.  
+A fast, simple, and modern food-ordering Android application built using **Java and Kotlin**, **XML**, and **Android Studio**.  
 QuickBite focuses on delivering a smooth, clean, and efficient user experience for browsing menus, ordering food, and managing user accounts.
 
 ---
@@ -33,10 +33,10 @@ QuickBite focuses on delivering a smooth, clean, and efficient user experience f
 
 | Component | Used |
 |----------|------|
-| Language | Java |
+| Language | Java and Kotlin |
 | UI | XML |
 | App Framework | Android SDK |
-| Database | Firebase / SQLite |
+| Database | Firebase |
 | Tools | Android Studio |
 
 ---
